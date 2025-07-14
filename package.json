@@ -1,0 +1,16 @@
+{
+  "name": "eth-track",
+  "version": "1.0.0",
+  "main": "balance-pull.js",
+  "scripts": {
+    "balance": "node balance-pull.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^6.15.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
