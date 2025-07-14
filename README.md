@@ -14,13 +14,13 @@ node portscanner.js localhost 25-80 csv
 node portscanner.js localhost 25,80,2015,135 json
 
 Setup:
-First have NodeJS
-Download the ZIP folder
-Extract it
-Go to the main folder and get it's file location
-Go to your device's terminal
-Execute this command: cd C:\Users\Example\Downloads\nodescanner
-Then execute whatever command you want to, usage help is stated
+First have NodeJS,
+Download the ZIP folder,
+Extract it,
+Go to the main folder and get it's file location,
+Go to your device's terminal,
+Execute this command: cd C:\Users\Example\Downloads\nodescanner,
+Then execute whatever command you want to, usage help is stated.
 
 List of ports (https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 Requires NodeJS to use. Easy setup (https://nodejs.org)
