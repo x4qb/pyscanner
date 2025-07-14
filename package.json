@@ -1,15 +1,16 @@
 {
-  "name": "eth-track",
+  "name": "nodescanner",
   "version": "1.0.0",
-  "main": "balance-pull.js",
-  "scripts": {
-    "balance": "node balance-pull.js"
-  },
+  "main": "index.js",
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ethers": "^6.15.0"
+    "ethers": "^6.15.0",
+    "fs": "^0.0.1-security",
+    "net": "^1.0.2",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "description": ""
