@@ -9,11 +9,11 @@ It supports:
 - 🚧 ICMP pings, UDP and advanced TCP scanning *(coming soon)*
 - ⚙️ Entirely command-line based and cross-platform
 
-- This tool requires NodeJS to be installed (https://nodejs.org)
-- You need to extract the ZIP file of this repository and then set your current directory to it in your device's terminal.
-- Then execute npm install to load all needed modules.
-- Then you can start executing NodeScanner commands.
-- Here's the full list of internet ports (https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+-- This tool requires NodeJS to be installed (https://nodejs.org)
+-- You need to extract the ZIP file of this repository and then set your current directory to it in your device's terminal.
+-- Then execute npm install to load all needed modules.
+-- Then you can start executing NodeScanner commands.
+-- Here's the full list of internet ports (https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 
 ---
 
