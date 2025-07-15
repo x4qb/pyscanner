@@ -2,6 +2,7 @@ import sys
 import socket
 import json
 import csv
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def parse_ports(port_arg):
     if '-' in port_arg:
@@ -33,7 +34,6 @@ def output_results(results, format=None):
         with open('scan_results.json', 'w') as f:
             json.dump(results, f, indent=2)
         print("Results saved to scan_results.json")
-
     elif format == 'csv':
         with open('scan_results.csv', 'w', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=['port', 'status'])
@@ -58,12 +58,16 @@ def main():
         sys.exit(1)
 
     print(f"Scanning {host} on ports: {', '.join(map(str, ports))}")
-    results = []
 
-    for port in ports:
-        result = scan_port(host, port)
-        results.append(result)
-        print(f"Port {result['port']}: {result['status']}")  # live output here!
+    results = []
+    max_threads = min(100, len(ports))
+
+    with ThreadPoolExecutor(max_workers=max_threads) as executor:
+        future_to_port = {executor.submit(scan_port, host, port): port for port in ports}
+        for future in as_completed(future_to_port):
+            result = future.result()
+            results.append(result)
+            print(f"Port {result['port']}: {result['status']}")
 
     if format:
         output_results(results, format)
