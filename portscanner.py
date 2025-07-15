@@ -33,13 +33,13 @@ def output_results(results, format=None):
     if format == 'json':
         with open('scan_results.json', 'w') as f:
             json.dump(results, f, indent=2)
-        print("Results saved to scan_results.json")
+        print("\nResults saved to scan_results.json")
     elif format == 'csv':
         with open('scan_results.csv', 'w', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=['port', 'status'])
             writer.writeheader()
             writer.writerows(results)
-        print("Results saved to scan_results.csv")
+        print("\nResults saved to scan_results.csv")
 
 def main():
     if len(sys.argv) < 3:
@@ -68,6 +68,10 @@ def main():
             result = future.result()
             results.append(result)
             print(f"Port {result['port']}: {result['status']}")
+            
+    print("\n--- Scan summary (sorted by port) ---")
+    for r in sorted(results, key=lambda x: x['port']):
+        print(f"Port {r['port']}: {r['status']}")
 
     if format:
         output_results(results, format)
