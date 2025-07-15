@@ -1,4 +1,0 @@
-dnspython
-speedtest-cli
-requests
-ping3
