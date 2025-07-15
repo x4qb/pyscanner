@@ -21,7 +21,7 @@ It supports:
 ## 🔧 Port Scanner Usage
 
 ```bash
-python portscanner.js <host/ip> <ports> <output>
+python portscanner.py <host/ip> <ports> <output>
 <host/ip> — The hostname or IP address to scan (e.g. localhost, 192.168.1.1)
 <ports> - Accepts comma separated and ranges (e.g. 25,80,443, 25-443)
 <output> (optional) (e.g. csv, json, or leave blank to just console log)
