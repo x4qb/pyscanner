@@ -1,0 +1,8 @@
+dnspython
+speedtest-cli
+requests
+ping3
+python-whois
+cryptography
+scapy
+colorama
