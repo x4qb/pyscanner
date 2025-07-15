@@ -2,7 +2,6 @@ import sys
 import socket
 import json
 import csv
-import time
 
 def parse_ports(port_arg):
     if '-' in port_arg:
@@ -42,9 +41,6 @@ def output_results(results, format=None):
             writer.writerows(results)
         print("Results saved to scan_results.csv")
 
-    for r in results:
-        print(f"Port {r['port']}: {r['status']}")
-
 def main():
     if len(sys.argv) < 3:
         print("\033[1;32mUsage: python portscanner.py <host> <port(s)> [json|csv]\033[0m")
@@ -67,8 +63,10 @@ def main():
     for port in ports:
         result = scan_port(host, port)
         results.append(result)
+        print(f"Port {result['port']}: {result['status']}")  # live output here!
 
-    output_results(results, format)
+    if format:
+        output_results(results, format)
 
 if __name__ == "__main__":
     main()
