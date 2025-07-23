@@ -18,6 +18,8 @@ It supports:
 
 ---
 
+**🔴 WARNING:** Do NOT use tools that are intrusive on a network's infrastructure or operations.
+
 ## 🔧 Command information
 - When you installed Python, extracted the zip, and installed what was required as per pip install -r requirements.txt, execute the command python info.py to see how to correctly execute commands from PyScanner.
 
