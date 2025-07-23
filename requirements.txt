@@ -6,3 +6,5 @@ python-whois
 cryptography
 scapy
 colorama
+ipwhois
+defusedxml
