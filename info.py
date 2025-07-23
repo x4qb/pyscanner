@@ -54,7 +54,7 @@ print("\nsniffer.py | This script is a network-level packet sniffer. You can see
 print("\033[1;32mUsage: python sniffer.py\033[0m")
 print("\033[1;31mOnly use this with permission from your network admin\033[0m")
 
-print("\nasn.py | This script is a tool to map an ip address (v4 and v6) to an AS (Autonomous System)")
+print("\nasn.py | This script is a tool to map an ip address (v4 and v6) to an AS (Autonomous System). It gives info about the AS such as organizatio names, ASNs, descriptions, country codes, CIDR, network info and more.")
 print("\033[1;32mUsage: python asn.py <ip>\033[0m")
 
 print("\n\033[1;32mMade by solo on Github\033[0m")
