@@ -4,12 +4,12 @@
 
 It supports:
 
-- ✅ Scanning common or specific ports
-- ✅ Exporting results to **JSON** or **CSV**
-- 🚧 ICMP pings, UDP and advanced TCP scanning *(coming soon)*
-- ⚙️ Entirely command-line based and cross-platform
+- Scanning common or specific ports
+- Exporting results to **JSON** or **CSV**
+- ICMP pings, UDP and advanced TCP scanning *(coming soon)*
+- Entirely command-line based and cross-platform
 
-## ❓ Things to know
+## Things to know
 - This tool requires **Python** to be installed (https://www.python.org/)
 - You need to extract the **ZIP** file of this repository and then set your current directory to it in your device's terminal by using the **CD** command.
 - Then execute pip install -r requirements.txt to load all needed modules.
@@ -18,7 +18,7 @@ It supports:
 
 ---
 
-**🔴 WARNING:** Do NOT use tools that are intrusive on a network's infrastructure or operations.
+**Do NOT:** use tools that are intrusive on a network's infrastructure or operations.
 
 ## 🔧 Command information
 - When you installed Python, extracted the zip, and installed what was required as per pip install -r requirements.txt, execute the command python info.py to see how to correctly execute commands from PyScanner.
