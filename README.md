@@ -6,7 +6,7 @@ It supports:
 
 - Scanning common or specific ports
 - Exporting results to **JSON** or **CSV**
-- ICMP pings, UDP and advanced TCP scanning *(coming soon)*
+- ICMP pings, UDP and advanced TCP scanning
 - Entirely command-line based and cross-platform
 
 ## Things to know
@@ -20,7 +20,7 @@ It supports:
 
 **Do NOT** use these network tools on WI-FIs or networks you're not allowed to intrude on
 
-## 🔧 Command information
+## Command information
 - When you installed Python, extracted the zip, and installed what was required as per pip install -r requirements.txt, execute the command python info.py to see how to correctly execute commands from PyScanner.
 
 ```bash
