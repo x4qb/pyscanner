@@ -18,7 +18,7 @@ It supports:
 
 ---
 
-**Do NOT:** use tools that are intrusive on a network's infrastructure or operations.
+**Do NOT** use these network tools on WI-FIs or networks you're not allowed to intrude on
 
 ## 🔧 Command information
 - When you installed Python, extracted the zip, and installed what was required as per pip install -r requirements.txt, execute the command python info.py to see how to correctly execute commands from PyScanner.
