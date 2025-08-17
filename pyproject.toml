@@ -1,0 +1,13 @@
+[project]
+name = "pyscanner"
+version = "1.0.0"
+description = ""
+authors = []
+license = { text = "ISC" }
+requires-python = ">=3.8"
+
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
